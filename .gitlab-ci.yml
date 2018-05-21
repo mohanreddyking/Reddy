@@ -1,0 +1,10 @@
+Build:
+  stage: build
+  variables:
+    CI_PROJECT_ID: projectid
+  script: 
+    - "./build.sh"
+Deploy to QA1:
+  stage: deploy
+  script:
+    - "./deploye.sh"
